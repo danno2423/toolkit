@@ -1,0 +1,116 @@
+.button-primary, .button-secondary, .button-disabled {
+  min-width: 100px;
+  length: 40px;
+  font-family: Verdana, Arial, sans-serif;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 4px 18px; }
+  .button-primary:focus, .button-secondary:focus, .button-disabled:focus {
+    border: 10px solid #000;
+    outline: none; }
+
+.button-primary {
+  color: red; }
+
+.button-secondary {
+  color: blue; }
+
+.button-disabled {
+  color: grey; }
+
+h1 {
+  font-family: 'Arimo', sans-serif;
+  font-size: 50px;
+  color: #423AA8;
+  text-shadow: #ad1fff 1px -1px, #ad1fff 2px -2px, #ad1fff 3px -3px; }
+
+h2 {
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+  color: #783AA8;
+  text-shadow: #1472ff -1px 1px, #1472ff -2px 2px; }
+
+h3 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  color: #3A6AA8; }
+
+body {
+  background-color: gray;
+  font: normal 18px Helvetica, arial, sans-serif; }
+  @media all and (min-width: 420px) {
+    body {
+      background-color: red; } }
+  @media all and (min-width: 600px) {
+    body {
+      background-color: green; } }
+
+.col {
+  border: 1px solid black; }
+  @media all and (min-width: 600px) {
+    .col {
+      float: left;
+      width: 49%; } }
+
+.info-extra {
+  display: none; }
+  @media all and (min-width: 420px) {
+    .info-extra {
+      background-color: red; } }
+
+input {
+  font-size: 24px; }
+  input::-webkit-input-placeholder {
+    color: red; }
+  input::-moz-placeholder {
+    color: red; }
+  input:-moz-placeholder {
+    color: red; }
+  input:-ms-input-placeholder {
+    color: red; }
+
+h1 {
+  font-size: 100px; }
+
+.cell-1 {
+  font-size: 12px; }
+
+.cell-2 {
+  font-size: 24px; }
+
+.cell-3 {
+  font-size: 36px; }
+
+.cell-4 {
+  font-size: 48px; }
+
+.cell-5 {
+  font-size: 60px; }
+
+.color-red {
+  color: "red"; }
+
+.color-green {
+  color: "green"; }
+
+.color-blue {
+  color: "blue"; }
+
+.list-style-type-disc {
+  list-style-type: disc; }
+
+.list-style-type-circle {
+  list-style-type: circle; }
+
+.list-style-type-decimal {
+  list-style-type: decimal; }
+
+.alert-regular, .alert-serious {
+  background-color: grey;
+  color: blue;
+  font-size: 24px; }
+
+.alert-serious {
+  background-color: red; }
+
+/*# sourceMappingURL=main.css.map */

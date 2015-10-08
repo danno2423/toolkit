@@ -1,0 +1,90 @@
+@import 'bourbon/bourbon';
+@import 'partials/buttons';
+@import 'partials/mixins';
+@import 'partials/headlines';
+
+body {
+	background-color: tint(black, 50%);
+	font: normal 18px Helvetica, arial, sans-serif;
+
+	@include breakpoint(small) {
+		background-color: red;
+	}
+
+	@include breakpoint(med) {
+		background-color: green;
+	}
+}
+
+
+.col {
+	border: 1px solid black;
+
+	@include breakpoint(med) {
+		float: left;
+		width: 49%;
+	}
+}
+
+.info-extra {
+	display: none;
+
+	@include breakpoint(small){
+		background-color: red;
+	}
+}
+
+input {
+	font-size: 24px;
+
+	@include placeholder {
+		color: red;
+	}
+}
+
+$text-size: big;
+
+h1 {
+	@if $text-size == big {font-size: 100px;}
+	@else if $text-size == small {font-size: 20px;}
+
+}
+
+@for $i from 1 through 5 {
+	.cell-#{$i} {
+		font-size: 12px * $i;
+
+	}
+}
+
+@each $color in "red", "green", "blue" {
+	.color-#{$color} {
+		color: $color;
+	}
+}
+
+@each $list in disc, circle, decimal {
+	.list-style-type-#{$list} {
+		list-style-type: $list;
+	}
+}
+
+%alert {
+	background-color: grey;
+	color: blue;
+	font-size: 24px;
+}
+
+.alert-regular {
+	@extend %alert;
+}
+
+.alert-serious {
+	@extend %alert;
+	background-color: red;
+}
+
+
+
+
+

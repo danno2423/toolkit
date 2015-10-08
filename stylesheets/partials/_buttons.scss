@@ -1,0 +1,31 @@
+%button {
+	min-width: 100px;
+	length: 40px;
+	font-family: Verdana, Arial, sans-serif;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 4px 18px;
+
+	&:focus {
+		border: 10px solid #000;
+		outline: none;
+	}
+}
+
+.button-primary {
+	@extend %button;
+	color: red;
+}
+
+.button-secondary {
+	@extend %button;
+	color: blue;
+}
+
+.button-disabled {
+	@extend %button;
+	color: grey;
+
+}
+
+
